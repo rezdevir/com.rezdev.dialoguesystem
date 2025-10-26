@@ -1,7 +1,7 @@
 {
   "name": "rezdev.dialoguesystem",
   "references": [
-    "Unity.TextMeshPro",
-    "Unity.UI"
+    "UnityEngine.UI",
+    "Unity.TextMeshPro"
   ]
 }
