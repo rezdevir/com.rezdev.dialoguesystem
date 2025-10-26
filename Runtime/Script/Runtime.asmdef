@@ -2,6 +2,7 @@
   "name": "rezdev.dialoguesystem",
   "references": [
     "UnityEngine.UI",
-    "Unity.TextMeshPro"
+    "Unity.TextMeshPro",
+    "Unity.InputSystem"
   ]
 }
