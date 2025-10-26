@@ -222,15 +222,14 @@ This component is responsible for spawning and managing multiple-choice UI butto
 🧰 Dependencies
 
 > Unity 2021.3+ (recommended)
+
 > TextMeshPro (for dialogue rendering)
+
 > JSON Utility or Newtonsoft.Json (for parsing dialogue data)
+
 > This Package Support New Unity Input System
 
 👤 Author
 
 Rez – System Designer & Programmer
 Focused on creating a unified workflow between writers and developers for faster, more flexible narrative systems in Unity.
-
-```
-
-```
