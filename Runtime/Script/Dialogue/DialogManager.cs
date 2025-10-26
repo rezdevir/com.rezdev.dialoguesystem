@@ -195,7 +195,7 @@ public class DialogManager : MonoBehaviour
 
     void AudioPlayer()
     {
-        // Debug.Log(audio_.isPlaying);
+      
         if (audio_.isPlaying)
         { audio_.Stop(); }
         else
@@ -456,7 +456,7 @@ public class DialogManager : MonoBehaviour
             return;
         }
         int mod = seq % nsprite;
-        // Debug.Log($"seq: {seq}, mod: {mod}, sprite: {sprites[mod]?.name}");
+       
         image_place.GetComponent<Image>().sprite = sprites[mod];
 
     }

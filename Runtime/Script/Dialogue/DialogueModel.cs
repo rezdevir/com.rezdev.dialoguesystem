@@ -32,34 +32,6 @@ public class DStyle
     public int end { get; set; }
     public string data { get; set; }
 }
-// public class DialogueSpeed : DStyle
-// {
-
-//     public float delay { get; set; }
-    
-
-//         public DialogueSpeed() { }
-
-//     public DialogueSpeed(DStyle baseStyle)
-//     {
-//         this.type = baseStyle.type;
-//         this.start = baseStyle.start;
-//         this.end = baseStyle.end;
-//     }
-// }
-// public class DialogueColor : DStyle
-// {
-//     public string color_hex { get; set; }
-    
-//     public DialogueColor() { }
-
-//     public DialogueColor(DStyle baseStyle)
-//     {
-//         this.type = baseStyle.type;
-//         this.start = baseStyle.start;
-//         this.end = baseStyle.end;
-//     }
-// }
 
 public class MultipleChoiceModel
 {

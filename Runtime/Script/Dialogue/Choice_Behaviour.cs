@@ -1,13 +1,15 @@
 using UnityEngine;
 using TMPro;
+using System.Drawing;
 public class Choice_Behaviour : MonoBehaviour
 {
     TMP_Text text_text;
     Color c_color;
     MultipleChoiceModel thisChoice;
-
     multiple_choice_dispatcher mParent;
     // Start is called before the first frame update
+    [SerializeField] private Color HoverColor = Color.Green;
+    
 
     RectTransform tr;
     void Awake()
@@ -20,7 +22,7 @@ public class Choice_Behaviour : MonoBehaviour
     public void OnEnter()
     {
         text_text.fontStyle = FontStyles.Bold;
-        text_text.color = Color.green;
+        text_text.color = HoverColor;
         Debug.Log("Enter");
     }
     public void OnExit()
