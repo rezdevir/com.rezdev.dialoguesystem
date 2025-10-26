@@ -104,7 +104,7 @@ Assets/Resources/Dialogues/Actions/
 
 Each prefab can have a script with a callable method and Then you can select the specefic method even with Args:
 
-[<img src="path/to/image.png">](https://github.com/rezdevir/CV/blob/main/ds.png)
+![Action Image](https://raw.githubusercontent.com/rezdevir/CV/main/ds.png)
 
 ```csharp
 using UnityEngine;
