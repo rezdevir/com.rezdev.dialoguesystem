@@ -1,6 +1,5 @@
 using UnityEngine;
 using TMPro;
-using System.Drawing;
 public class Choice_Behaviour : MonoBehaviour
 {
     TMP_Text text_text;
