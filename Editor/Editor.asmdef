@@ -1,0 +1,9 @@
+{
+  "name": "rezdev.dialoguesystem.Editor",
+  "references": [
+    "rezdev.dialoguesystem"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

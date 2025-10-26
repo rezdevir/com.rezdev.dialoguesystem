@@ -1,0 +1,16 @@
+{
+  "name": "com.rezdev.dialoguesystem",
+  "displayName": "Unity Dialogue system",
+  "version": "1.0.0",
+  "unity": "2022.3",
+  "description": "An easy-to-use dialogue system with branching, animation, and event actions. Includes editor tools, prefabs, and resources.",
+  "author": {
+    "name": "Reza",
+    "url": "https://github.com/rezdev.ir"
+  },
+  "dependencies": {
+    "com.unity.ugui": "2.0.0",
+    "com.unity.textmeshpro": "3.0.6",
+    "com.unity.nuget.newtonsoft-json": "3.2.1"
+  }
+}
