@@ -177,6 +177,38 @@ You can access dialogue Start,End for whole and a line in game.
     }
 ```
 
+### 🧩 Multiple Choice System
+
+The Multiple Choice System allows the dialogue manager to display player choices dynamically based on the current dialogue context (speaker position and layout symmetry).
+
+Components
+
+```bash
+multiple_choice_dispatcher
+```
+
+This component is responsible for spawning and managing multiple-choice UI buttons.
+
+#### Main Responsibilities:
+
+- Receives choice data from DialogManager through OnMultipleChoiceDelegate.
+
+- Instantiates up to 4 choice buttons under its transform.
+
+- Clears existing choices when a selection is made.
+
+#### Differentiates between:
+
+- Left/Right speaker: (Is_Left)
+
+- Symmetric/Non-Symmetric layout: (Is_Symmetric)
+
+#### Layout behavior:
+
+- Non-symmetric (single speaker): uses Vertical Layout Group.
+
+- Symmetric (two speakers): uses Horizontal Layout Group.
+
 ⚡ Notes & Tips
 
     Keep prefab names case-sensitive to match the action names exactly.
@@ -189,11 +221,10 @@ You can access dialogue Start,End for whole and a line in game.
 
 🧰 Dependencies
 
-    Unity 2021.3+ (recommended)
-
-    TextMeshPro (for dialogue rendering)
-
-    JSON Utility or Newtonsoft.Json (for parsing dialogue data)
+> Unity 2021.3+ (recommended)
+> TextMeshPro (for dialogue rendering)
+> JSON Utility or Newtonsoft.Json (for parsing dialogue data)
+> This Package Support New Unity Input System
 
 👤 Author
 

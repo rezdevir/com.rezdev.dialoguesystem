@@ -15,7 +15,7 @@ public class DialogueStarter : MonoBehaviour
 
         yield return new WaitForSeconds(1);
         // Start Instance of dialogue
-        DialogManager.Instance.StartDialog(dialogname, false);
+        DialogManager.Instance.StartDialog(dialogname);
         DialogManager.Instance.OnEndDialogueLine += DialogLineEnd;
         DialogManager.Instance.OnStartDialogueLine += DialogLineStart;
         DialogManager.Instance.OnStartDialogue += DialogSystemStart;

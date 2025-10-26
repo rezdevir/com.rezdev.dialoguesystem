@@ -15,6 +15,7 @@ public class multiple_choice_dispatcher : MonoBehaviour
     }
     public void Initiate(List<MultipleChoiceModel> choices,bool IsLeft,bool IsSymmetric)
     {
+        
         if (IsLeft != Is_Left) return;
         if (Is_Symmetric != IsSymmetric) return;
         int counter = 4;

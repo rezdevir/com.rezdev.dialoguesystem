@@ -38,6 +38,7 @@ public class DialogManager : MonoBehaviour
     #endregion delegate
     #region Inspector
     [Header("********************* UI Component *********************")]
+    [Header("Next Click Object")]
     public GameObject click_Place;
     public TMP_Text name_speaker_1_txt;
     public TMP_Text text_speaker_1_txt;
@@ -50,18 +51,19 @@ public class DialogManager : MonoBehaviour
 
     [Space(30)]
     [Header("********************* Settings *********************")]
-    [SerializeField] private int click_times = 2;
+    [Header("Number of click for fast skip")]
+    [SerializeField] private int click_times = 1;
+    [Header("Next Click Text")]
     [SerializeField] private string CLICK_FOR_NEXT = "Click for next line";
 
 
     int click_times_;
 
     bool isFast = false;
-    bool isBlocking = false;
 
     [Header("Symmetric Dialogue (2 Player Show)")]
     [SerializeField] bool Is_Symmetric = false;
-
+    [Header("The time that takes each word be written")]
     [SerializeField] private float delay = 0.1f;
     [Header("Folder Address: Resources\\ROOT_FOLDER\\ROOT_FOLDER_NAME")]
     [SerializeField] private string ROOT_FOLDER_NAME = "JSONS";
@@ -136,7 +138,7 @@ public class DialogManager : MonoBehaviour
     /// File Dialoag adress .dialog
     /// </summary>
     /// <param name="name of dialogue file"></param>
-    public void StartDialog(string name, bool isBlocking)
+    public void StartDialog(string name)
     {
 
         current_branch = MAIN_BRANCH;
@@ -164,13 +166,13 @@ public class DialogManager : MonoBehaviour
         this.gameObject.GetComponent<Transform>().GetChild(0).gameObject.SetActive(true);
         //Setting up UI
         First_Add_Image(dialogues);
-        this.isBlocking = isBlocking;
+       
 
         //Start coroutine
         StartCoroutine(Dialogue_queue(dialogues));
 
         //TODO:FIX THIS
-        // I want to make 2 dialogue style 
+
         // 1- Blocking and Non-Blocking
     }
     IEnumerator Dialogue_queue(List<Dialogue> dialogues)
