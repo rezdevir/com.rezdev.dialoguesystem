@@ -7,7 +7,7 @@ public class Choice_Behaviour : MonoBehaviour
     MultipleChoiceModel thisChoice;
     multiple_choice_dispatcher mParent;
     // Start is called before the first frame update
-    [SerializeField] private Color HoverColor = Color.Green;
+    [SerializeField] private Color HoverColor = Color.green;
     
 
     RectTransform tr;

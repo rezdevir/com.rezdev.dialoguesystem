@@ -1,5 +1,5 @@
 using System.Collections;
-using System.Diagnostics;
+
 using UnityEngine;
 
 public class DialogueStarter : MonoBehaviour
